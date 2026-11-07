@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config-description:config-descriptions
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:config-description="https://openhab.org/schemas/config-description/v1.0.0"
+	xsi:schemaLocation="https://openhab.org/schemas/config-description/v1.0.0 https://openhab.org/schemas/config-description-1.0.0.xsd">
+
+	<config-description uri="profile:seime-profiles:redeliver-command">
+		<parameter name="numRedeliveries" type="integer" min="0" step="1">
+			<label>Number Of Redeliveries</label>
+			<description>The number of redeliveries (in addition to the original attempt).</description>
+			<default>1</default>
+		</parameter>
+		<parameter name="redeliverDelayMillis" type="integer" min="0" step="1" unit="ms">
+			<label>Redelivery Delay</label>
+			<description>The number of milliseconds between each redelivery attempt.</description>
+			<default>1000</default>
+		</parameter>
+	</config-description>
+</config-description:config-descriptions>

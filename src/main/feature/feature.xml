@@ -1,0 +1,13 @@
+<features name="no.seime.openhab.transform.profiles-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+	<repository>
+		mvn:org.openhab.core.features.karaf/org.openhab.core.features.karaf.openhab-core/${ohc.version}/xml/features
+	</repository>
+
+	<feature name="openhab-transformation-seimeprofiles" description="Seime Profiles" version="${project.version}">
+		<feature>openhab-runtime-base</feature>
+
+		<bundle start-level="75">
+			mvn:org.openhab.addons.bundles/no.seime.openhab.transform.profiles/${project.version}
+		</bundle>
+	</feature>
+</features>
