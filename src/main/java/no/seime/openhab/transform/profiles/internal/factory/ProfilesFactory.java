@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023 Contributors to the Seime Openhab Addons project
+ * Copyright (c) 2023-2026 Contributors to the Seime Openhab Addons project
  * <p>
  * See the NOTICE file(s) distributed with this work for additional
  * information.
